@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="welcome.master.cs" Inherits="Online_E_Library.welcome" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>E-Library</title>
+    <link rel="shortcut icon" href="./images/All necessary Images/imgs/books1.png" type="image/x-icon" />
+
+    <%--including the bootstrap css --%>
+    <link href="bootstrap/Css/bootstrap.min.css" rel="stylesheet" />
+
+    <%--including the datatable css --%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <%-- including the fontawesome css --%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%-- including the customstylesheet css --%>
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
+    <%-- including the bootstrap 1js --%>
+    <script src="bootstrap/Js/bootstrap.min.js"></script>
+
+    <%-- including the bootstrap 2js --%>
+    <script src="bootstrap/Js/jquery-3.3.1.slim.min.js"></script>
+
+    <%-- including the bootstrap 3js --%>
+    <script src="bootstrap/Js/popper.min.js"></script>
+
+<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

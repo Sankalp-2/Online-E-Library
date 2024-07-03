@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="publisher_login.master.cs" Inherits="Online_E_Library.publisher_login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>E-Library</title>
+    <link rel="shortcut icon" href="./images/All necessary Images/imgs/books1.png" type="image/x-icon" />
+
+
+    <%--including the bootstrap css --%>
+    <link href="bootstrap/Css/bootstrap.min.css" rel="stylesheet" />
+
+    <%--including the datatable css --%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <%-- including the fontawesome css --%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%-- including the customstylesheet css --%>
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
+    <%-- including the bootstrap 1js --%>
+    <script src="bootstrap/Js/bootstrap.min.js"></script>
+
+    <%-- including the bootstrap 2js --%>
+    <script src="bootstrap/Js/jquery-3.3.1.slim.min.js"></script>
+
+    <%-- including the bootstrap 3js --%>
+    <script src="bootstrap/Js/popper.min.js"></script>
+  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/All necessary Images/imgs/books.png" width="30" height="35" />
+                    E-library
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link active" href="homepage.aspx" ID="LinkButton1" runat="server" >Home</asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="viewbook.aspx">View Books</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        
+                       <li class="nav-item">
+                            <asp:LinkButton class="nav-link active" href="PublisherSignup.aspx" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                        </li>
+
+                        <%--This will print the name of the user or admin--%>
+                        <li class="nav-item">
+                            <asp:LinkButton class="nav-link active" ID="LinkButton7" runat="server"></asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+           <!-- Footer -->
+        <footer>
+
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color: whitesmoke">
+                            &copy All Right Reserved. <a class="footerlinks" href="#" target="_blank">Online E-Library
+                                <br />
+                            </a>If you have any 
+                            sugession or feedback then click on-> <a class="footerlinks" href="#" target="_blank">Feedback</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>
